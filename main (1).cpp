@@ -1,20 +1,46 @@
-#include <iostream>
+#include<iostream>
+#include<iomanip>
+#include<string>
 using namespace std;
 
-int main()
-{
-  char rank;
-  cout << "Input your rank: ";
-  cin >> rank;
-  if(rank=='S')
-    cout << "You have received Super Ultra Rare Unit!!!\n";
-  if (rank=='A' || rank == 'S' )
-    cout << "You have received 5 gems.\n";
-  if (rank == 'B' || rank=='A' || rank == 'S')
-    cout << "You have received 1 gems.\n";
-  if(rank == 'C' || rank == 'B' || rank=='A' || rank == 'S')
-    cout << "You have received 2000 coins.\n";
-  if(rank == 'D' || rank == 'C' || rank == 'B' || rank=='A' || rank == 'S')
-    cout << "You have received very KAK items.\n";
-  return 0;
-}
+int main(){
+    int a,h,p;
+    cout<<"Enter your age: ";
+    cin>>a;
+    if(a<=20){
+        cout<<"Enter your height: ";
+        cin>>h;
+        if(h<160){
+            cout<<"Your status = UNFRIEND";
+        }
+        else if (h<175) {
+            cout<<"Your status = FRIEND";
+        }
+        else {
+            cout<<"Enter your property: ";
+            cin>>p;
+            if(p>69000000){
+                cout<<"Your status = MARRIED";
+            }
+            else{
+                cout<<"Your status = ONE-NIGHT-STAND";
+            }
+        }
+
+    }
+    else if (a<30){
+       cout<<"Enter your property: ";
+        cin>>p; 
+        if(p>10000000){
+           cout<<"Your status = BEST FRIEND"; 
+        }
+        else{
+            cout<<"Your status = UNFRIEND";
+        }
+    }
+    else
+    {
+        cout<<"Your status = UNFRIEND";
+    }
+
+} 
